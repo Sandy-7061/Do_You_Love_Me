@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 600px; /* Ensure the wrapper is constrained within a limit */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Add some space around the gif */
+    border-radius: 10px; /* Optional: Round edges for a smoother look */
+}
+
+h2 {
+    font-size: 2em; /* Slightly smaller text to prevent overflow */
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.1);
+}
+
+.no-btn {
+    position: relative;
+    z-index: 1; /* Ensure it's on top */
+}
+
+.no-btn:hover {
+    position: relative;
+    transform: translateX(100px); /* Move only during hover */
+}
+
+.timer {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff6b6b;
+}
